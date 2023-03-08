@@ -1,19 +1,69 @@
 /**************************/
 /* HEADER */
 /**************************/
-  
+.header {
+    /* Placement of content side by side (i.e., row) */
+    display: flex;
+    /* Spreads content horizontally */
+    justify-content: space-between;
+    /* Centers content vertically */
+    align-items: center;
+    background-color: #ffffff;
+    /* The following are being applied to make the Nav bar sticky later */
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
 /**************************/
 /* NAVIGATION */
 /**************************/
+  .main-nav-list {
+      list-style: none;
+      display: flex;
+      gap: 3.2rem;
+  }
   
-  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    text-decoration: underline;
+  }
+
+
 /* MOBILE NAVIGATION */
 
 
 /**************************/
 /* HERO SECTION */
 /**************************/
-  
+  .section-hero {
+      padding: 4.8rem 0 9.6rem 0;
+      background-color: #f7f7f7;
+  }
+
+  .hero-container {
+    /* The Hero container being wider than the rest of the sections is a style choice */
+    max-width: 130rem;
+     /* Centers the container */
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    /* Side by side columns */
+    grid-template-columns: 1fr 1fr;
+    /* Spacing between columns */ 
+    gap: 9.6rem;
+    /* Centers content vertically */
+    align-items: center;
+  }
 
 /**************************/
 /* SECTION - 1 */

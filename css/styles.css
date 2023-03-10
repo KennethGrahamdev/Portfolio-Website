@@ -8,11 +8,20 @@
     justify-content: space-between;
     /* Centers content vertically */
     align-items: center;
-    background-color: #ffffff;
+    background-color: #090909;
     /* The following are being applied to make the Nav bar sticky later */
-    height: 9.6rem;
+    height: 8rem;
     padding: 0 4.8rem;
     position: relative;
+}
+
+.logo {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
 }
 /**************************/
 /* NAVIGATION */
@@ -20,14 +29,16 @@
   .main-nav-list {
       list-style: none;
       display: flex;
-      gap: 3.2rem;
+      gap: 14rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
   }
   
   .main-nav-link:link,
   .main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3s;
@@ -47,7 +58,18 @@
 /**************************/
   .section-hero {
       padding: 4.8rem 0 9.6rem 0;
-      background-color: #f7f7f7;
+      text-align: center;
+      display: flex;
+      align-items: center;
+  }
+
+  .bg-image {
+    background-image: url(https://i.postimg.cc/DZn725dm/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 
   .hero-container {
@@ -56,22 +78,127 @@
      /* Centers the container */
     margin: 0 auto;
     padding: 0 3.2rem;
-    display: grid;
-    /* Side by side columns */
-    grid-template-columns: 1fr 1fr;
-    /* Spacing between columns */ 
-    gap: 9.6rem;
-    /* Centers content vertically */
-    align-items: center;
+  }
+
+  .hero-secondary {
+      font-size: 3.6rem;
+      line-height: 1.2;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      padding-bottom: 1.6rem;
+  }
+
+  .hero-primary {
+      font-size: 7.2rem;
+      line-height: 1.2;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
   }
 
 /**************************/
-/* SECTION - 1 */
+/* ABOUT */
 /**************************/
+  .about-section {
+    padding: 12.8rem 0;
+    background-color: #fafafa;
+  }
+
+  .about-container {
+      text-align: center;
+      max-width: 150rem;
+      margin: 0 auto;
+  }
+
+  .about-column-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .about-text {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #252525;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .about-columns {
+      padding: 3.2rem 6.4rem;
+      text-align: left;
+  }
+
+  .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+  }
+
+  .skills-content {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #252525;
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem 2rem;
+    margin: 0 1.5rem 1.5rem 0;
+    background-color: #99999933;
+  }
   
 /**************************/
-/* SECTION - 2 */
+/* PORTFOLIO */
 /**************************/
+.portfolio-section {
+    padding: 12.8rem 0;
+    background-color: #090909;
+}
+
+.portfolio-container {
+    text-align: center;
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+.portfolio-heading {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 6.4rem;
+}
+
+.portfolio-column-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    padding: 0 4rem;
+}
+ .portfolio-column {
+     background-color: #ffffff;
+ }
+
+.portfolio-img {
+    width: 100%;
+}
+
+.portfolio-img-text-container {
+    display: block;
+    padding: 2rem;
+}
+
+.portfolio-btn {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #252525;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;  
+}
 
 /**************************/
 /* SECTION - 3 */

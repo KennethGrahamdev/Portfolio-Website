@@ -44,12 +44,16 @@ Medium: 11px
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: none;
   /* Does NOT work on Safari */
   /* scroll-behavior: smooth; */
 }
@@ -74,29 +78,23 @@ body {
   margin: 0 auto;
 }
 
-.heading-primary,
-.heading-secondary,
-.heading-tertiary {
+.heading-secondary {
+  font-size: 3.6rem;
+  line-height: 1.2;
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 9.6rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 6.4rem;
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.2;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 3.2rem;
 }
 

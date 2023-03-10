@@ -1,86 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Place general description of content here."
-    />
+    <meta name="description" content="Place general description of content here." />
     <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;500;600&family=Poppins:wght@600;700&family=Roboto:wght@400;700&display=swap"/>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <title>Kenneth Graham Email Developer</title>
-  </head>
-  <body>
+</head>
+<body>
     <!-------------------- NAVIGATION -------------------->
     <header class="header">
-      <a href="#">
-        <img class="logo" alt="logo" src="" />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#section-1">Section-1</a></li>
-          <li><a class="main-nav-link" href="#section-2">Section-2</a></li>
-          <li>
-            <a class="main-nav-link nav-cta" href="#section-3">Section-3</a>
-          </li>
-        </ul>
-      </nav>
-      <!-------------- MOBILE NAVIGATION -------------->
-      <!-- Build when inserting media queries -->
-      <!-------------- MOBILE NAVIGATION -------------->
+        <a href="#">
+            <h3 class="logo">KG</h3>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#about">About</a></li>
+                <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+                <li>
+                    <a class="main-nav-link nav-cta" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-------------- MOBILE NAVIGATION -------------->
+        <!-- Build when inserting media queries -->
+        <!-------------- MOBILE NAVIGATION -------------->
     </header>
     <!-------------------- NAVIGATION -------------------->
     <main>
-      <!-------------------- HERO -------------------->
-      <section class="section-hero">
-        <div class="hero-container">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">Hero Section</h1>
-          </div>
-        </div>
-      </section>
-      <!-------------------- HERO -------------------->
+        <!-------------------- HERO -------------------->
+        <section class="section-hero bg-image">
+            <div class="hero-container">
+                <div class="hero-text-box">
+                        <p class="hero-secondary">Email Developer</p>
+                        <h1 class="hero-primary">Kenneth Graham</h1>
+                </div>
+            </div>
+        </section>
+        <!-------------------- HERO -------------------->
 
-      <!-------------------- SECTION-1 -------------------->
-      <section class="section-1" id="section-1">
-        <div class="container">
-          <h2 class="heading-section-1">Section 1</h2>
-        </div>
-      </section>
-      <!-------------------- SECTION-1 -------------------->
+        <!-------------------- ABOUT -------------------->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <h2 class="heading-secondary">ABOUT ME</h2>
+                <div class="about-column-container">
+                    <!-- Column-1 -->
+                    <div class="about-columns">
+                        <h2 class="heading-tertiary">Who am I?</h2>
+                        <div class="about-text-container">
+                            <p class="about-text">
+                                I am a meticulous Email Developer who embraces the unique challenges of email development. Each email is tested using Litmus for dark mode optimization, responsiveness, and accessibility in over 80 email clients. The emails I build are ready to use in Salesforce Marketing Cloud, Pardot, MailChimp, Marketo, Klaviyo, etc. I can take any Figma or PSD file and turn it into a functional and visually appealing HTML email
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Column-2 -->
+                    <div class="about-columns">
+                        <h2 class="heading-tertiary">My Skills</h2>
+                        <div class="skills-container">
+                            <div class="skills-content">HTML</div>
+                            <div class="skills-content">CSS</div>
+                            <div class="skills-content">Photoshop</div>
+                            <div class="skills-content">Figma</div>
+                            <div class="skills-content">Sketch</div>
+                            <div class="skills-content">Litmus</div>
+                            <div class="skills-content">Email On Acid</div>
+                        </div>
 
-      <!-------------------- SECTION-2 -------------------->
-      <section class="section-2" id="section-2">
-        <div class="container">
-          <h2 class="heading-section-2">Section 2</h2>
-        </div>
-      </section>
-      <!-------------------- SECTION-2 -------------------->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------- ABOUT -------------------->
 
-      <!-------------------- SECTION-3 -------------------->
-      <section class="section-3" id="section-3">
-        <div class="container">
-          <h2 class="heading-section-3">Section 3</h2>
-        </div>
-      </section>
-      <!-------------------- SECTION-3 -------------------->
+        <!-------------------- PORTFOLIO -------------------->
+        <section class="portfolio-section" id="portfolio">
+            <div class="portfolio-container">
+                <h2 class="portfolio-heading">PORTFOLIO</h2>
+                <div class="portfolio-column-container">
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/WztKfG75/work-6.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------- PORTFOLIO -------------------->
+
+        <!-------------------- SECTION-3 -------------------->
+        <section class="section-3" id="contact">
+            <div class="container">
+                <h2 class="heading-secondary">Section 3</h2>
+            </div>
+        </section>
+        <!-------------------- SECTION-3 -------------------->
     </main>
     <!-------------------- FOOTER -------------------->
     <footer class="footer">
-      <div class="container"></div>
+        <div class="container"></div>
     </footer>
     <!-------------------- FOOTER -------------------->
-  </body>
+</body>
+
 </html>

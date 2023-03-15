@@ -71,10 +71,10 @@ body {
 /* GENRAL REUSABLE COMPONENTS */
 /**********************************/
 .container {
-  /* 1300px */
-  max-width: 130rem;
-  padding: 0 3.2rem;
-  /* Centers the container */
+  /* 1350px */
+  max-width: 135rem;
+  text-align: center;
+  /* Horizontally centers div */
   margin: 0 auto;
 }
 

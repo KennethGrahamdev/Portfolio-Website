@@ -194,6 +194,37 @@
 .contact-section {
     padding: 12.8rem 0;
     background-color: #ffffff;
+    position: relative;
+}
+
+.contact-social-container {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.social-icons {
+    width: 5rem;
+}
+
+.social-link {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    transition: background .3s;
+    border-radius: 5px;
+}
+
+.social-img {
+    width: 100%;
 }
 
 .form-container {
@@ -232,24 +263,41 @@
     background: #f0f0f0;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
+
+}
+
+textarea {
+    resize: none;
 }
 
 .contact-btn {
     width: 30%;
     padding: 2rem 4rem;
     font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    font-family: 'Nunito', sans-serif;
 }
-
-
-
-
-
-
-
-  
 /**************************/
 /* FOOTER */
 /**************************/
-  
+.footer-section {
+    padding: 12.8rem 0 2.4rem 0;
+    background-color: #090909;
+}
+
+.footer-upper {
+
+}
+
+.footer-lower {
+    border-top: 1px solid #8b8989;
+}
+.footer-text {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    padding: 4rem 0;
+}
 
   

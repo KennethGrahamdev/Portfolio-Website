@@ -10,10 +10,11 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;500;600;700&family=Poppins:wght@600;700&family=Roboto:wght@400;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap"/>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://kit.fontawesome.com/5ff21f0f39.js" crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
     <title>Kenneth Graham Email Developer</title>
 </head>
@@ -23,12 +24,11 @@
         <a href="#">
             <h3 class="logo">KG</h3>
         </a>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#about">About</a></li>
-                <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
-                <li>
-                    <a class="main-nav-link nav-cta" href="#contact">Contact</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-link-container"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-link-container"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-link-container"><a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -87,44 +87,66 @@
                 <h2 class="portfolio-heading">PORTFOLIO</h2>
                 <div class="portfolio-column-container">
                     <div class="portfolio-column">
-                        <a href="">
                             <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
                             <img class="portfolio-img" src="https://i.postimg.cc/0yLqMSWJ/Filter-Easy.png
-                            " alt="">
-                        </a>
+                            " alt="FilterEasy email screenshot">
+                            <a href="">
+                                <div class="layer">
+                                    <h3 class="layer-heading">Transactional</h3>
+                                    <p class="layer-text">FilterEasy</p>
+                                </div>
+                            </a>
                     </div>
                     <div class="portfolio-column">
-                        <a href="">
                             <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
                             <img class="portfolio-img" src="https://i.postimg.cc/ZRmtjShb/Surreal.png
-                            " alt="">
-                        </a>
+                            " alt="Surreal email screenshot">
+                            <a href="">
+                                <div class="layer">
+                                    <h3 class="layer-heading">Promotional</h3>
+                                    <p class="layer-text">Surreal</p>
+                                </div>
+                            </a>
                     </div>
                     <div class="portfolio-column">
-                        <a href="">
                             <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
                             <img class="portfolio-img" src="https://i.postimg.cc/1tKxjj9p/Travel-Journal.png
-                            " alt="">
-                        </a>
+                            " alt="Christian Travel Journal">
+                            <a href="">
+                                <div class="layer">
+                                    <h3 class="layer-heading">Newsletter</h3>
+                                    <p class="layer-text">Christian Travel Journal</p>
+                                </div>
+                            </a>
                     </div>
                     <div class="portfolio-column">
-                        <a href="">
                             <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
                             <img class="portfolio-img" src="https://i.postimg.cc/mrCWQrJp/Union.png
                             " alt="">
-                        </a>
+                            <a href="">
+                                <div class="layer">
+                                    <h3 class="layer-heading">Promotional</h3>
+                                    <p class="layer-text">Union</p>
+                                </div>
+                            </a>
                     </div>
                     <div class="portfolio-column">
-                        <a href="">
                             <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
                             <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
-                        </a>
+                            <div class="layer">
+                                <h3 class="layer-heading">TYPE</h3>
+                                <p class="layer-text">Company</p>
+                                <a class="layer-icon" href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
                     </div>
                     <div class="portfolio-column">
-                        <a href="">
                             <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
                             <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
-                        </a>
+                            <div class="layer">
+                                <h3 class="layer-heading">TYPE</h3>
+                                <p class="layer-text">Company</p>
+                                <a class="layer-icon" href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -136,21 +158,22 @@
             <div class="container">
                 <h2 class="heading-secondary">CONTACT</h2>
                 <div class="form-container">
-                    <form class="contact-form">
+                    <form name="submit-to-google-sheet" class="contact-form">
                         <div class="input-container">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" class="form-input" placeholder="Enter Your Name" required>
+                            <input name="Name" type="text" id="name" class="form-input" placeholder="Enter Your Name" required>
                         </div>
                         <div class="input-container">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-input" placeholder="Enter Your Email" required> 
+                            <input name="Email" type="email" id="email" class="form-input" placeholder="Enter Your Email" required> 
                         </div>
                         <div class="input-container">
                             <label for="message" class="form-label">Message</label>
-                            <textarea name="message" id="message" class="form-input" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+                            <textarea name="Message" id="message" class="form-input" rows="8" placeholder="Enter Your Message" required></textarea>
                         </div>
                         <button type="submit" class="contact-btn">SUBMIT</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </section>
@@ -178,6 +201,23 @@
         </div>
     </footer>
     <!-------------------- FOOTER -------------------->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyI1GTO-MyBNlpQqYni93LABLzoZ3cqxfj8LXexF1pfc2SScYX9m4CaJhbKGZoebtWf/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message Sent"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>

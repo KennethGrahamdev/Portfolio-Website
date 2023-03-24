@@ -12,8 +12,8 @@ Bold: 700
 - Line heights
 Default: 1
 Medium: 1.2
-Paragraph default: 1.6
-Large: 1.8
+Paragraph default: 2
+
 
 - Letter spacing
 -0.5px
@@ -73,8 +73,8 @@ body {
 /* GENRAL REUSABLE COMPONENTS */
 /**********************************/
 .container {
-  /* 1350px */
-  max-width: 135rem;
+  /* 1400px */
+  max-width: 140rem;
   text-align: center;
   /* Horizontally centers div */
   margin: 0 auto;
@@ -97,7 +97,7 @@ body {
   color: #333;
   letter-spacing: -0.5px;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 /* HELPER/SETTINGS CLASSES */

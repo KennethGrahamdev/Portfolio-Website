@@ -20,7 +20,6 @@ window.addEventListener('scroll', ()=> {
   })
 })
 ///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
 // Lets the user know their message has successfully been sent.
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyI1GTO-MyBNlpQqYni93LABLzoZ3cqxfj8LXexF1pfc2SScYX9m4CaJhbKGZoebtWf/exec'
 const form = document.forms['submit-to-google-sheet']
@@ -37,7 +36,6 @@ form.addEventListener('submit', e => {
   })
     .catch(error => console.error('Error!', error.message))
 })
-///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 // Sets the current year in the footer section.
 const yearEL = document.querySelector(".year");

@@ -19,7 +19,7 @@
     font-size: 4.4rem;
     line-height: 1.2;
     font-weight: 700;
-    color: #ffffff;
+    color: #50D890;
     letter-spacing: 1.5px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -110,27 +110,28 @@ nav a:hover::after {
     font-size: 8.6rem;
     line-height: 1.2;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
   
 .hero-dots {
     font-size: 3.6rem;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    padding: 2.4rem;
+    padding: 2.4rem 0 4.4rem 0;
     display: block;
   }
 
 
   .hero-secondary {
-      font-size: 2.4rem;
+      font-size: 4.4rem;
       line-height: 1.2;
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
+      color: #50D890;
+      font-family: 'Kulim Park', sans-serif;
       font-weight: 400;
   }
+
 
 /**************************/
 /* ABOUT */
@@ -154,7 +155,7 @@ nav a:hover::after {
   }
 
   .about-columns {
-      padding: 3.2rem 6.4rem;
+      padding: 3.2rem;
       text-align: left;
   }
 
@@ -242,13 +243,12 @@ nav a:hover::after {
     line-height: 1.2;
     font-weight: 500;
     color: #050505;
-    letter-spacing: -0.5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 3.2rem;
 }
 
 .layer-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #050505;
     font-family: 'Nunito', sans-serif;
@@ -297,21 +297,14 @@ nav a:hover::after {
     margin-bottom: 6rem;
 }
 
-.form-label {
-    font-size: 1.4rem;
-    display: block;
-    text-align: left;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-family: 'Nunito', sans-serif;
-}
+
 
 .form-input {
     color: #333;
     padding: 1.6rem;
     width: 100%;
     border: 1px solid #ebebeb;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     background: #f0f0f0;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
@@ -325,17 +318,18 @@ textarea {
 .contact-btn {
     width: 30%;
     padding: 2rem 4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     border: none;
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
+    background: #50D890;
 }
 
 #msg {
-    color: #21a310;
+    color: #252525;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     margin-top: 3rem;
     display: block;

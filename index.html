@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;600;700&family=Kulim+Park:wght@400;500;600;700&display=swap"/>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -45,7 +45,9 @@
                 <div class="hero-text-box">
                   <h1 class="hero-primary">Kenneth Graham</h1>
                   <span class="hero-dots">...</span>
-                  <p class="hero-secondary">Email Developer</p>
+                  <p class="hero-secondary">
+                      <span class="auto-type"></span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -196,6 +198,17 @@
         </div>
     </footer>
     <!-------------------- FOOTER -------------------->
+    <!-------------------- Auto typing effect -------------------->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+          strings: ['Learner', 'Problem - Solver', 'Email Developer'],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
+        });
+      </script>
+    <!-------------------- Auto typing effect -------------------->
 </body>
 
 </html>

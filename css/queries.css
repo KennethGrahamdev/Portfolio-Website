@@ -1,26 +1,24 @@
 /* rem and em do NOT depend on html font-size in media queries! Use em for better browser support when it comes 
 to media queries. Instead, 1rem = 1em = 16px */
 /************************************/
-/* BELOW 1400px*/
+/* BELOW 1408px*/
 /************************************/
-@media (max-width: 87.5em) {
-  html {
-    /* 9px / 16px  */
-    font-size: 56.25%;
-  }
+@media (max-width: 88em) {
+  /* .skills-container {
+    gap: 1rem;
+} */
 
 }
 /************************************/
-/* BELOW 1050px*/
+/* BELOW 1280px*/
 /************************************/
 
-@media (max-width: 105em) {
-  html {
-    /* 9px / 16px  */
-    font-size: 56.25%;
-  }
-
+@media (max-width: 80em) {
+  /* .skills-container {
+    gap: 0rem;
 }
+
+} */
 
 /**************************/
 /* BELOW 944px */

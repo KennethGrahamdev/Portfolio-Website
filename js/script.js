@@ -37,6 +37,16 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 ///////////////////////////////////////////////////////////
+// Controls opening and closing of mobile navigation.
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener('click', function() {
+  headerEl.classList.toggle("nav-open");
+});
+
+
+///////////////////////////////////////////////////////////
 // Sets the current year in the footer section.
 const yearEL = document.querySelector(".year");
 const currentYear = new Date().getFullYear();

@@ -178,7 +178,9 @@ nav a:hover::after {
   .skills-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 3rem;
+      gap: 5rem;
+      justify-content: center;
+      align-items: center;
   }
 
   .skills-content {
@@ -188,7 +190,6 @@ nav a:hover::after {
     color: #252525;
     font-family: 'Nunito', sans-serif;
     padding: 1rem 2rem;
-    margin: 0 1.5rem 1.5rem 0;
     background-color: #99999933;
   }
   
@@ -200,15 +201,6 @@ nav a:hover::after {
     background-color: #090909;
 }
 
-.portfolio-heading {
-    font-size: 3.6rem;
-    line-height: 1.2;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -0.5px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 6.4rem;
-}
 
 .portfolio-column-container {
     display: grid;
@@ -302,7 +294,7 @@ nav a:hover::after {
     max-width: 80rem;
     text-align: right;
     width: 95%;
-    margin: 5rem auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .heading-form {
@@ -315,14 +307,12 @@ nav a:hover::after {
     margin-bottom: 6rem;
 }
 
-
-
 .form-input {
     color: #333;
     padding: 1.6rem;
     width: 100%;
     border: 1px solid #ebebeb;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background: #f0f0f0;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
@@ -333,15 +323,16 @@ textarea {
     resize: none;
 }
 
+
 .contact-btn {
     width: 30%;
-    padding: 2rem 4rem;
-    font-size: 1.8rem;
     font-weight: 700;
     border: none;
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
     background: #d3af37;
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
 }
 
 #msg {
@@ -369,9 +360,14 @@ textarea {
     color: #ffffff;
 }
 
-.footer-lower {
+.divider {
     border-top: 1px solid #444;
-    font-size: 1.6rem;
+    display: inline-block;
+    width: 80rem;
+}
+
+.footer-lower {
+    font-size: 1.4rem;
     color: #ffffff;
     font-family: 'Nunito', sans-serif;
     padding: 4rem 0;

@@ -276,4 +276,24 @@ nav a::after {
 /**************************/
 /* Fixing Safari flexbox gap */
 /**************************/
+.no-flexbox-gap .skills-container li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+@media (max-width: 42.5em) {
+  .no-flexbox-gap .skills-container li:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 50em) {
+  .no-flexbox-gap .skills-container li:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .no-flexbox-gap .skills-container li:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
 

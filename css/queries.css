@@ -174,15 +174,6 @@ nav a::after {
   }
  }
 /**************************/
-/* BELOW 680px  */
-/**************************/
-@media (max-width: 42.5em) {
-  .skills-container {
-    gap: 3rem;
-  }
- }
-
-/**************************/
 /* BELOW 600px  */
 /**************************/
 
@@ -282,7 +273,7 @@ nav a::after {
   margin-right: 5rem;
 }
 
-@media (max-width: 42.5em) {
+@media (max-width: 43.75em) {
   .no-flexbox-gap .skills-container li:not(:last-child) {
     margin-right: 3rem;
   }
@@ -294,7 +285,7 @@ nav a::after {
 }
 @media (max-width: 56.25em) {
   .no-flexbox-gap .skills-container li:not(:last-child) {
-    margin-right: 3rem;
+    margin-right: 5rem;
   }
 }
 

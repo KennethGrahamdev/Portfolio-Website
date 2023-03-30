@@ -70,15 +70,34 @@ nav a::after {
   transition: none;
 }
 /* Mobile navigation */
+.about-column-container {
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 2.4rem;
+}
+.about-columns {
+  text-align: center;
+}
+.about-text {
+  padding: 0 5.2rem;
+}
+.skills-container {
+  padding: 0 13rem;
+}
 .portfolio-column-container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 8rem;
   row-gap: 8rem;
   padding: 0 4rem;
 }
-
 }
-
+/**************************/
+/* BELOW 960px */
+/**************************/
+@media (max-width: 60em) {
+  .skills-container {
+    padding: 0;
+  }
+}
 /**************************/
 /* BELOW 900px */
 /**************************/
@@ -95,14 +114,10 @@ nav a::after {
 .heading-secondary {
   font-size: 3rem;
 }
-.about-text {
-  font-size: 1.8rem;
-}
+
 .skills-container {
-  gap: 3rem;
-}
-.skills-content {
-  font-size: 1.8rem;
+  gap: 5rem;
+  padding: 0 10rem;
 }
  .divider {
    width: 60rem;
@@ -121,9 +136,6 @@ nav a::after {
 .hero-secondary {
     font-size: 3rem;
 }
-.heading-secondary {
-  font-size: 3.6rem;
-}
 .pad {
   padding: 8rem 0;
 }
@@ -131,25 +143,14 @@ nav a::after {
   padding: 12.8rem 0;
 }
 
-.about-column-container {
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 2.4rem;
-}
-.about-columns {
-  text-align: center;
-}
-.about-text {
-  padding: 0 4rem;
-}
-.skills-container {
-  gap: 5rem;
-}
-
 .portfolio-column-container {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 10rem;
   row-gap: 10rem;
   padding: 0 4rem;
+}
+.layer {
+  height: 100%;
 }
 .layer-heading {
   font-size: 3.6rem;
@@ -166,6 +167,10 @@ nav a::after {
 @media (max-width: 43.75em) {
   .divider {
     width: 40rem;
+  }
+  .skills-container {
+    padding: 0;
+    gap: 3rem;
   }
  }
 /**************************/
@@ -188,9 +193,6 @@ nav a::after {
   .hero-dots {
     font-size: 2rem;
   }
-  .hero-secondary {
-      font-size: 2.4rem;
-  }
   .portfolio-column-container {
     row-gap: 5rem;
   }
@@ -209,7 +211,7 @@ nav a::after {
     font-size: 1.8rem;
   }
   .hero-secondary {
-      font-size: 2rem;
+      font-size: 2.4rem;
   }
   .heading-secondary {
     font-size: 2.4rem;
@@ -258,7 +260,7 @@ nav a::after {
     font-size: 1.6rem;
   }
   .hero-secondary {
-      font-size: 1.8rem;
+      font-size: 2rem;
   }
   .form-container {
     padding: 3rem;

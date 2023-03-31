@@ -103,10 +103,6 @@ nav a::after {
 .hero-secondary {
   font-size: 3.6rem;
 }
-.heading-secondary {
-  font-size: 3rem;
-}
-
 .skills-container {
   padding: 0 10rem;
 }
@@ -136,14 +132,12 @@ nav a::after {
 .portfolio-section {
   padding: 12.8rem 0;
 }
-
 .portfolio-column-container {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 10rem;
   row-gap: 10rem;
   padding: 0 4rem;
 }
-
 .layer-heading {
   font-size: 3.6rem;
   margin-bottom: 3.2rem;
@@ -201,7 +195,7 @@ nav a::after {
       font-size: 2.4rem;
   }
   .heading-secondary {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   .pad {
     padding: 6.4rem 0;
@@ -250,6 +244,9 @@ nav a::after {
   }
   .hero-secondary {
       font-size: 2rem;
+  }
+  .heading-secondary {
+    font-size: 2.4rem;
   }
   .form-container {
     padding: 3rem;

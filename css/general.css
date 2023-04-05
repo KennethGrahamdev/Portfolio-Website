@@ -21,7 +21,8 @@ Paragraph default: 2
 
 --- 02 COLORS
 - Primary:
-#090909
+#191919
+#333333
 #fafafa
 #f5f5f5 
 - Tints:
@@ -65,7 +66,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #333333;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
 }
@@ -85,7 +86,7 @@ body {
   font-size: 3.6rem;
   line-height: 1.2;
   font-weight: 600;
-  color: #333;
+  color: #333333;
   letter-spacing: 0.5px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 6.4rem;
@@ -96,7 +97,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.2;
   font-weight: 600;
-  color: #333;
+  color: #333333;
   letter-spacing: -0.5px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 4.8rem;

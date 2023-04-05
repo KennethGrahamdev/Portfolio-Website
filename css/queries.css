@@ -52,16 +52,16 @@ to media queries. Instead, 1rem = 1em = 16px */
 }
 
 .close {
-  color: #090909;
+  color: #191919;
 }
 
 .about, .portfolio, .contact {
-  color: #090909;
+  color: #191919;
   font-size: 3rem;
 }
 
 nav a::after {
-  background-color: #090909;
+  background-color: #191919;
 }
 
 .active {

@@ -260,6 +260,7 @@ nav a:hover::after {
 
 .layer-text {
     font-size: 1.6rem;
+    line-height: 1.8;
     font-weight: 400;
     color: #333333;
     font-family: 'Nunito', sans-serif;

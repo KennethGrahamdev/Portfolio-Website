@@ -346,10 +346,14 @@ textarea {
     padding: 4rem;
 }
 .social-img {
-    width: 4rem;
+    width: 5rem;
     margin-right: 1.6rem;
     font-size: 1.4rem;
     color: #fafafa;
+}
+
+.hide {
+    display: none;
 }
 
 .divider {

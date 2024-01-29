@@ -11,7 +11,7 @@
     background-color: #191919;
     /* The following are being applied to make the Nav bar sticky later */
     height: 8rem;
-    padding: 0 4.8rem;
+    padding: 0 3.2rem;
     position: relative;
 }
 
@@ -47,7 +47,7 @@ nav ul li {
     color: #fafafa;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.8rem; 
+    font-size: 2rem; 
     font-family: 'Poppins', sans-serif;
     padding: 0 1rem;
 }
@@ -114,7 +114,6 @@ nav a:hover::after {
 /* HERO SECTION */
 /**************************/
   .section-hero {
-      padding: 4.8rem 0 9.6rem 0;
       text-align: center;
       display: flex;
       align-items: center;
@@ -162,17 +161,56 @@ nav a:hover::after {
       grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-text {
-    font-size: 2rem;
-    line-height: 2;
-    font-weight: 400;
-    color: #333333;
-    font-family: 'Nunito', sans-serif;
+  .about-columns-2 {
+      padding: 0 3.2rem 0 0;
+      text-align: left;
   }
 
-  .about-columns {
-      padding: 3.2rem;
-      text-align: left;
+  .about-img {
+      width: 100%;
+  }
+
+  .tab-titles {
+      display: flex;
+      margin: 2rem 0 4rem;
+  }
+
+  .tab-links {
+    font-size: 2rem;
+    margin-right: 9.6rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab-links::after {
+    content: "";
+    position: absolute;
+    background-color: #d3af37;
+    height: .3rem;
+    width: 0%;
+    left: 0;
+    bottom: -0rem;
+    transition: 0.5s;
+  }
+  .tab-links.active-link::after {
+      width: 100%;
+  }
+
+  .tab-contents ul li {
+      list-style: none;
+      margin: 1rem 0;
+  }
+
+  .tab-contents {
+      display: none;
+  }
+
+  .tab-contents.active-tab {
+      display: block;
   }
 
   .skills-container {
@@ -181,21 +219,19 @@ nav a:hover::after {
     column-gap: 2rem;
     row-gap: 3rem;
   }
-
   .skills-content {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 400;
     color: #333333;
     font-family: 'Nunito', sans-serif;
-    padding: 1rem 2rem;
+    padding: 1rem;
     background-color: #99999933;
   }
-  
 /**************************/
 /* PORTFOLIO */
 /**************************/
@@ -210,7 +246,7 @@ nav a:hover::after {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10rem;
     row-gap: 10rem;
-    padding: 0 4rem;
+    padding: 0 3.2rem;
 }
 
 .portfolio-column {
@@ -250,12 +286,12 @@ nav a:hover::after {
 }
 
 .layer-heading {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: 500;
     color: #333333;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 4.8rem;
+    margin-bottom: 3.2rem;
 }
 
 .layer-text {

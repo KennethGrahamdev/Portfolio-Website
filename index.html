@@ -71,32 +71,41 @@
                 <div class="about-column-container">
                     <!-- Column-1 -->
                     <div class="about-columns">
-                        <h2 class="heading-secondary">About Me</h2>
                         <div class="about-text-container">
-                            <p class="about-text">
-                                I am a seasoned customer service professional turned full-fledged email geek. 
-                                I embrace the plethora of quirks and unique challenges that developers encounter in the realm of email marketing. 
-                                My priorities when developing are to build accessible, accurate, and responsive emails. 
-                                Each email is tested to ensure the best user experience and representation of the brand on all devices and email clients. 
-                                When I'm not buried in divs and tables, I’m usually binge watching a TV series or doing my best rendition of Stephen Curry on the hardwood.
-                            </p>
+                            <img class="about-img" src="https://kgportfoliosite.s3.us-west-1.amazonaws.com/Website/assets/images/casual-bg-trans.png" alt="Kenneth Graham">
                         </div>
                     </div>
                     <!-- Column-2 -->
-                    <div class="about-columns">
-                        <h2 class="heading-secondary">Skills</h2>
-                        <div class="skills-container">
-                            <div class="skills-content">HTML</div>
-                            <div class="skills-content">CSS</div>
-                            <div class="skills-content">Hybrid Coding</div>
-                            <div class="skills-content">QA Testing</div>
-                            <div class="skills-content">Dark Mode</div>
-                            <div class="skills-content">Photoshop</div>
-                            <div class="skills-content">Figma</div>
-                            <div class="skills-content">Sketch</div>
-                            <div class="skills-content">Parcel</div>
-                            <div class="skills-content">Mailchimp</div>
-                            <div class="skills-content">Constant Contact</div>
+                    <div class="about-columns-2">
+                        <div class="tab-titles">
+                            <h2 class="tab-links active-link" onclick="opentab('summary')">Summary</h2>
+                            <h2 class="tab-links" onclick="opentab('skills')">Skills</h2>
+                            <h2 class="tab-links" onclick="opentab('stack')">Stack</h2>
+                        </div>
+                        <div class="tab-contents active-tab" id="summary">
+                            <p class="text">I'm an experienced customer service professional turned full-fledged email geek. I embrace the plethora of quirks and unique challenges that developers encounter in the realm of email marketing. My priorities when developing are to build accessible, accurate, and responsive emails. Each email is tested to ensure the best user experience and representation of the brand on all devices and email clients. When I'm not buried in divs and tables, I’m usually binge watching a TV series or doing my best rendition of Stephen Curry on the hardwood.</p>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <div class="skills-container">
+                                <div class="skills-content">HTML</div>
+                                <div class="skills-content">CSS</div>
+                                <div class="skills-content">Hybrid Coding</div>
+                                <div class="skills-content">Responsive Design</div>
+                                <div class="skills-content">QA Testing</div>
+                                <div class="skills-content">Dark Mode</div>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="stack">
+                            <div class="skills-container">
+                                <div class="skills-content">Photoshop</div>
+                                <div class="skills-content">Figma</div>
+                                <div class="skills-content">Sketch</div>
+                                <div class="skills-content">Litmus</div>
+                                <div class="skills-content">Email On Acid</div>
+                                <div class="skills-content">Testi</div>
+                                <div class="skills-content">Parcel</div>
+                                <div class="skills-content">VS Code</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,5 +246,21 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-------------------- Mobile Icon -------------------->
+    <!-------------------- About section clicking -------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-------------------- About section clicking -------------------->
 </body>
 </html>

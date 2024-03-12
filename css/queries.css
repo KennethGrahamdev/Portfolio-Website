@@ -3,7 +3,7 @@ to media queries. Instead, 1rem = 1em = 16px */
 /************************************/
 /* BELOW 1100px*/
 /************************************/
-@media (max-width: 68.75em) {
+@media (max-width: 78em) {
   /* "Hamburger" navigation */
 .btn-mobile-nav {
   display: block;
@@ -221,6 +221,9 @@ nav a::after {
   }
   .tab-links {
     margin: 0 1.6rem;
+  }
+  .text {
+    font-size: 1.6rem;
   }
   .skills-container {
     padding: 0;

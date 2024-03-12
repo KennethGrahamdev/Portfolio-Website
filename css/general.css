@@ -108,4 +108,6 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 /* HELPER/SETTINGS CLASSES */
-
+.top {
+  margin-top: 1.2rem;
+}
